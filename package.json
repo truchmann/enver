@@ -1,5 +1,5 @@
 {
-  "name": "yana5",
+  "name": "enver-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.89.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
