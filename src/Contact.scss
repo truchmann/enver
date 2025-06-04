@@ -1,0 +1,30 @@
+.contact {
+  padding: 64px 0 48px 0;
+}
+.contact__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.contact__title {
+  font-size: 3.2rem;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  text-align: left;
+  flex: 1;
+}
+.contact__button {
+  background: #6C63FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 40px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+.contact__button:hover {
+  background: #5548c8;
+} 

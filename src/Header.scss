@@ -1,0 +1,155 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+  background: transparent;
+  transition: background 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88px;
+  padding: 0 56px;
+}
+
+.header__container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 20px;
+}
+
+.header--scrolled {
+  background: rgba(24, 24, 36, 0.96);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.header__logo-img {
+  display: block;
+  height: 48px;
+  width: auto;
+  max-width: 180px;
+}
+
+.header__nav {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+  width: 400px;
+  justify-content: center;
+}
+
+.header__nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  letter-spacing: 0.2px;
+  transition: opacity 0.2s, color 0.2s;
+  padding: 2px 0;
+  position: relative;
+  z-index: 2;
+  line-height: 1;
+  white-space: nowrap;
+  width: auto;
+}
+
+.header__nav a.active {
+  opacity: 1;
+  color: #5454D4;
+}
+
+.header__nav a.active::after {
+  display: none;
+}
+
+.header__nav a.active, .header__nav a:hover {
+  opacity: 1;
+}
+
+.header__contact {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  width: 160px;
+  justify-content: center;
+}
+
+.header__contact:hover {
+  background: #5454D4;
+  color: #fff;
+  border-color: #5454D4;
+}
+
+@media (max-width: 1200px) {
+  .header__container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  
+  .header__nav {
+    width: 350px;
+    gap: 32px;
+  }
+  
+  .header__nav a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 0 24px;
+  }
+  
+  .header__container {
+    padding: 0;
+  }
+  
+  .header__logo {
+    width: 140px;
+  }
+  
+  .header__nav {
+    width: 280px;
+    gap: 24px;
+  }
+  
+  .header__nav a {
+    font-size: 14px;
+  }
+  
+  .header__contact {
+    width: 140px;
+    padding: 8px 24px;
+    font-size: 14px;
+  }
+} 
